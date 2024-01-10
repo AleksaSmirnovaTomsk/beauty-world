@@ -1,3 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+/*HEADER*/
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
