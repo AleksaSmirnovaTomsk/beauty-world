@@ -8,10 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/" />
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./compiled-styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,83 +17,76 @@
 
 </head>
 
-<body class="centered">
-    <header>
-        <div class=header-wrapper>
-            <div class="top-wrapper">
-                <h1>Мир красоты</h1>
-                <nav>
+<body>
+    <header class="header">
+        <div class="content-contaitner content-container__for-header">
+            <div class="header__top">
+                <a class="header__logo">Мир красоты</a>
+                <nav class="header__nav">
                     <ul>
                         <li><a href="">Услуги и цены</a></li>
                         <li><a href="">Мастера</a></li>
                         <li><a href="">Наши работы</a></li>
-                        <li><a href="#about-section">О нас</a></li>
+                        <li><a href="">О нас</a></li>
                         <li><a href="">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="contact-wrapper">
-                    <h2>8 (499) 686-17-62</h2>
-                    <p>с 10:00 до 19:00 без выходных</p>
+                <div class="header__info">
+                    <p class="header__phone-number">8 (499) 686-17-62</p>
+                    <p class="header__schedule">с 10.00 до 19.00 без выходных</p>
                 </div>
             </div>
 
-            <section class="short-description">
-                <h2>Создай свой образ вместе с нами</h2>
-                <p>Идеальный образ за 60 минут</p>
+            <div class="header__content">
+                <div class="header__hero">
+                    <div class="header__short-description">
+                        <h2>Создай свой образ вместе с нами</h2>
+                        <p>Идеальный образ за 60 минут</p>
+                    </div>
+                    <button class="button button__big">Записаться онлайн</button>
+                </div>
+                <div class="header__social">
+                </div>
+            </div>
 
-                <section class="social-networks">
-                    <ul>
-                        <li><a href="http://vk.com/id0"><img src="./img/vk.svg" alt="vk"></a></li>
-                        <li><a href="https://habr.com/ru/news/655229/"><img src="./img/inst.svg" alt="inst"></a></li>
-                        <li><a href="http://youtube.com"><img src="./img/youtube.svg" alt="youtube"></a></li>
-                    </ul>
-                </section>
-
-                <div class="girl"><img src="./img/girl.png" alt="girl-pic"></div>
-
-                <button class="header-button">Записаться онлайн</button>
-            </section>
+            <img class="header__girl" src="img/girl.png" alt="girl">
         </div>
     </header>
     <main>
         <section class="about">
-            <a id="about-section"></a>
-            <div class="about-wrapper">
-                <div class="about-text-wrapper">
-                    <h1>О салоне</h1>
-
-                    <p class="intro">Мир красоты - это уютный салон
-                        в самом центре города.
-                        Здесь работают
-                        профессиональные визажисты,
-                        стилисты и мастера татуажа</p>
-
-                    <p class="subp"> Красота и хороший уход никогда не выходят из моды.
-                        Мы приглашаем Вас в место, где гармония обретает форму,
-                        а внешность становится отражением внутреннего мира.
-                        Новая жизнь начинается с небольших изменений.
-                        Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике.
-                        Мы создаем стиль – вместе с Вами и для Вас. </p>
+            <div class="content-container">
+                <h2 class="content-container__header">О салоне</h2>
+                <div class="about__desc-n-pic">
+                    <div class="about__description">
+                        <p class="about__p1">Мир красоты - это уютный салон в самом центре города. Здесь работают
+                            профессиональные визажисты, стилисты и мастера татуажа</p>
+                        <p class="about__p2">Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в
+                            место,
+                            где
+                            гармония обретает форму,
+                            а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших
+                            изменений. Мы
+                            помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль –
+                            вместе с
+                            Вами и для Вас.</p>
+                    </div>
+                    <div class="about__video"><img src="img/player_layout.svg"></div>
                 </div>
-                <img class="video-img" src="./img/video-preview.png" alt="video">
-            </div>
-            <div class="about-highlights">
-                <div class="pic-n-text">
-                    <img src="img/frame.svg" alt="frame_icon">
-                    <h2>Удобные кабинеты</h2>
-                    <p>Комфорт и стиль - принцип создания кабинетов салона красоты.
-                        Только эстетика и удобство для Вас</p>
-                </div>
-                <div class="pic-n-text">
-                    <img src="img/creampot.svg" alt="creampot">
-                    <h2>Качественная косметика</h2>
-                    <p>Используем профессиональные материалы высшего качества <br>лучших брендов</p>
-                </div>
-                <div class="pic-n-text">
-                    <img src="img/scissors.svg" alt="scissors_icon">
-                    <h2>Опытные мастера</h2>
-                    <p>Работают только опытные мастера с чувством стиля. Смотрите наших специалистов в разделе
-                        Мастера</p>
+                <div class="about-cards">
+                    <div class="about-cards__element"><img class="about-cards__pic" src="img/frame.svg">
+                        <h3>Удобные кабинеты</h3>
+                        <p>Комфорт и стиль - принцип создания кабинетов салона красоты. Только эстетика и удобство для
+                            Вас</p>
+                    </div>
+                    <div class="about-cards__element"><img class="about-cards__pic" src="img/creampot.svg">
+                        <h3>Качественная косметика</h3>
+                        <p>Используем профессиональные материалы высшего качества<br>лучших брендов</p>
+                    </div>
+                    <div class="about-cards__element"><img class="about-cards__pic" src="img/scissors.svg">
+                        <h3>Опытные мастера</h3>
+                        <p>Работают только опытные мастера с чувством стиля. Смотрите наших специалистов в разделе
+                            Мастера</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -291,22 +281,61 @@
                 </div>
             </div>
         </section>
+        <section class="contacts">
+            <div class="content-container">
+                <div class="left-part">
+                    <h2>
+                        Контакты
+                    </h2>
+                    <p>
+                        Томск, проспект Ленина, дом 13
+                    </p>
+                    <p>
+                        8 (499) 686-17-62
+                    </p>
+                    <a href="mailto:info@more-krasoty.ru">info@more-krasoty.ru</a>
+
+                    <div class="left-part__social">
+                        <h4>Мы в социальных сетях</h4>
+                        <div class="left-part__social-icons">
+                            <img src="img/vk.svg" alt="vk"><img src="img/inst.svg" alt="inst"><img src="img/youtube.svg"
+                                alt="youtube">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <form>
+                        <h3>
+                            Быстрая запись
+                        </h3>
+                        <p>Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.
+                        </p>
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="phone" placeholder="+7 (___) ___-__-__">
+                        <button type="submit">Записаться</button>
+                        <p class="right-part__conditions">
+                            Нажимая на кнопку вы соглашаетесь с <a href="">обработкой персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+        </section>
     </main>
     <footer>
-        <div class="copyright">
-            <p>©️ 2024 "Море Красоты"<br>
+        <div class="content-container content-container__for-footer">
+            <div class="footer__copyright">
+                <p>© 2020 «Море красоты»</p>
                 <a href="#">Политика конфиденциальности</a>
-            </p>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="">Услуги и цены</a></li>
+                    <li><a href="">Мастера</a></li>
+                    <li><a href="">Наши работы</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="">Услуги и цены</a></li>
-                <li><a href="">Мастера</a></li>
-                <li><a href="">Наши работы</a></li>
-                <li><a href="#about-section">О нас</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </nav>
     </footer>
 </body>
 
